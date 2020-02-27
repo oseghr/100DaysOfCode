@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 200;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: lightblue;
+            width: 100%;
+            box-shadow: 
+            -2px -2px 8px 2px #fff,
+            2px 2px 8px 2px #c4c4c4;
+        }
+
+        .grids {
+            padding: 1em;
+            margin: 0 auto;
+            line-height: 1.5;
+            background-color: antiquewhite;
+            border-radius: 8px;
+            box-shadow: 
+            -2px -2px 8px 2px #fff,
+            2px 2px 8px 2px #c4c4c4;
+        }
+
+        .container {
+            height: auto;
+            padding: 0 1.5em 5em;
+            display: grid;
+            grid-gap: 1.5em;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            overflow: hidden;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>GRIDS</h1>
+    <div class="container">
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 7</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+        <div class="grids">
+            <img src="#" alt="Hello">
+            <h2>Title 9</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
+        </div>
+
+    </div>
+</body>
+</html>
