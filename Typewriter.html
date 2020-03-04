@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 20%;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff
+        }
+        .container {
+            border-top: 1px solid #c4c4c4;
+            padding: 2em;
+        }
+        h1 {
+            font-variant: small-caps;
+        }
+        #write {
+            display: block;
+            margin: auto auto 2em;
+            width: 40%;
+            box-shadow: -2px -2px 8px 2px #ffffff,
+                        2px 2px 8px 2px #c4c4c4;
+        }
+
+        #ok {
+            padding: 0.5em 4em;
+            border-radius: 5px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .demo {
+            margin: 2em;
+            
+            padding: 2em;
+            cursor: progress;
+            font-variant: small-caps;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header><h1>Typewriter Effect</h1></header>
+    <div class="container">
+        <div class="demo"></div>
+        <textarea name="textarea" id="write" cols="30" rows="5" placeholder="Enter any text"></textarea>
+        <button id="ok">Ok</button>
+        
+    </div>
+
+
+    <script>
+        // let write = document.querySelector('#write');
+        const ok = document.querySelector("#ok");
+        const demo = document.querySelector('.demo');
+
+        ok.addEventListener('click', writeFxn);
+
+        var i = 0
+        let writer = "";
+
+        function writeFxn() {
+            writer = document.querySelector('#write').value;
+            if (i < writer.length) {
+                demo.innerHTML += writer.charAt(i);
+                i++;            
+                setTimeout(writeFxn, 200);
+            }            
+            
+        }
+
+
+
+    </script>
+</body>
+</html>
