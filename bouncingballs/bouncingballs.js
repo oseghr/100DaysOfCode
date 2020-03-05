@@ -91,9 +91,7 @@ function animate() {
         }
       }
       
-    //forloop end
     }
-//animation end
 }
 
 animate();
