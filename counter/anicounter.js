@@ -7,10 +7,10 @@ counter.forEach(counter => {
         const target = +counter.getAttribute("data-target");
         const count = +counter.innerText;
  
-        const inc = target/200; 
+        const increment = target/200; 
 
         if (count < target) {
-            counter.innerText = count + inc;
+            counter.innerText = count + increment;
             setTimeout(updateCount, 10);
 
         } else {
