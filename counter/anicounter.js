@@ -1,7 +1,7 @@
 const counter = document.querySelectorAll(".counter");
 
 
-counter.forEach(counter => {
+counter.forEach( counter => {
     const updateCount = () => {
 
         const target = +counter.getAttribute("data-target");
