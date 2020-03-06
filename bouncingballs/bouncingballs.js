@@ -1,6 +1,5 @@
-console.log("Hello World");
 
-var canvas = document.getElementById("canvas");
+var canvas = document.querySelector("#canvas");
 var c = canvas.getContext("2d");
 var tx = window.innerWidth;
 var ty = window.innerHeight;
@@ -91,9 +90,7 @@ function animate() {
         }
       }
       
-    //forloop end
     }
-//animation end
 }
 
 animate();
