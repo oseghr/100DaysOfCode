@@ -14,10 +14,12 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        header {
+        h1 {
             text-align: center;
-            background-color: lightblue;
+            background-color: aqua;
             width: 100%;
+            border: 1px solid red;
+            display: block;
             box-shadow: 
             -2px -2px 8px 2px #fff,
             2px 2px 8px 2px #c4c4c4;
@@ -44,57 +46,159 @@
 
         }
 
+        .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+        width: 100%;
+        height: 0;
+        position: fixed; /* Stay in place */
+        z-index: 100; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        }
+
+        .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        height: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+        }
+
+        .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+        }
+
+        .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+        }
+
+        /* Position the close button (top right corner) */
+        .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        }
+
+        #hide {
+            float: right;
+            padding: 5px;
+        }
+
+
+
+
     </style>
 </head>
 <body>
-    <header><h1>GRIDS</h1></header>
-    <main class="container">
-        <article class="grids">
+
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  
+</div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <img onclick="openNav(), hide()" src="https://img.icons8.com/windows/32/000000/menu.png" id="hide">
+  
+
+
+    <h1>GRIDS</h1>
+    <div class="container">
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 1</h2>
+            <img src="https://img.icons8.com/windows/100/000000/multiply.png"><img src="https://img.icons8.com/color/100/000000/delete-sign.png"><img src="https://img.icons8.com/color/100/000000/angularjs.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 2</h2>
+            <img src="https://img.icons8.com/windows/100/000000/codepen.png"><img src="https://img.icons8.com/color/100/000000/edit.png"><img src="https://img.icons8.com/color/100/000000/javascript.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 3</h2>
+            <img src="https://img.icons8.com/color/100/000000/react-native.png"><img src="https://img.icons8.com/color/100/000000/instagram-new.png"><img src="https://img.icons8.com/windows/100/000000/github.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 4</h2>
+            <img src="https://img.icons8.com/windows/100/000000/facebook.png"><img src="https://img.icons8.com/color/100/000000/facebook.png"><img src="https://img.icons8.com/color/100/000000/phone.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 5</h2>
+            <img src="https://img.icons8.com/windows/100/000000/twitter.png"><img src="https://img.icons8.com/color/100/000000/twitter.png"><img src="https://img.icons8.com/color/100/000000/filled-message.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 6</h2>
+            <img src="https://img.icons8.com/windows/100/000000/linkedin.png"><img src="https://img.icons8.com/color/100/000000/linkedin.png"><img src="https://img.icons8.com/color/100/000000/c-sharp-logo.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 7</h2>
+            <img src="https://img.icons8.com/windows/100/000000/menu.png"><img src="https://img.icons8.com/color/100/000000/html-5.png"><img src="https://img.icons8.com/color/100/000000/python.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 8</h2>
+            <img src="https://img.icons8.com/color/100/000000/nodejs.png"><img src="https://img.icons8.com/color/100/000000/settings.png"><img src="https://img.icons8.com/color/100/000000/css3.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
-        <article class="grids">
+        </div>
+        <div class="grids">
             <img src="#" alt="Hello">
             <h2>Title 9</h2>
+            <img src="https://img.icons8.com/windows/100/000000/home.png"><img src="https://img.icons8.com/color/100/000000/home.png"><img src="https://img.icons8.com/color/100/000000/slack.png">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia quo, sequi esse laboriosam culpa, alias pariatur est odio similique suscipit ducimus non nulla repudiandae temporibus, enim voluptate labore a?</p>
-        </article>
+        </div>
 
-    </main>
+    </div>
+
+    <script>
+        function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  
+  
+}
+
+function hide() {
+    document.getElementById("hide").style.display = "none";
+}
+
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("hide").style.display = "block";
+  
+}
+    </script>
 </body>
 </html>
