@@ -38,7 +38,7 @@
 
         .container {
             height: auto;
-            padding: 0 1.5em 5em;
+            padding: 1.5em 5em;
             display: grid;
             grid-gap: 1.5em;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -183,22 +183,19 @@
 
     <script>
         function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-  
-  
-}
+            document.getElementById("myNav").style.height = "100%"; 
+        }
+        /* Close when someone clicks on the "menu" symbol this hides the "menu" */
+        function hide() {
+            document.getElementById("hide").style.display = "none";
+        }
 
-function hide() {
-    document.getElementById("hide").style.display = "none";
-}
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+          document.getElementById("hide").style.display = "block";
 
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-  document.getElementById("hide").style.display = "block";
-  
-}
+        }
     </script>
 </body>
 </html>
