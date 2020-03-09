@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="navbarmenu.css">
 </head>
 <body>
-    <nav class="slide" id="fixed">     
+    <nav class="slide">     
         <ul class="slidelist">
             <img onclick="closeNav()" id="close" src="https://img.icons8.com/material/24/000000/multiply.png">
             <li class="slideitem"><a class="slidelink" href="#">home</a></li>
@@ -42,12 +42,10 @@
 
 function openNav() {
     document.querySelector(".slide").style.height = "100vh";
-    // document.querySelector(".slide").style.display = "block";
 }
 
 function closeNav() {
     document.querySelector(".slide").style.height = "0%";
-    // document.querySelector(".slide").style.display = "none";
 }
 
 
