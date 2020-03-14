@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -13,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.7);
-
 }
 
 #clock {
@@ -23,7 +21,6 @@ body {
     padding: 1em;
     text-align: center;
     font-size: 7em;
-    color: #32cd32;
+    color: #3232cd;
     border-radius: 0.3em;
-
 }
