@@ -1,5 +1,5 @@
 # 100DaysOfCode
 building a practice of coding everyday
 
-Credits: Tyler Potts, Brad Traversy, W3School
+Credits: W3School, Coding Addict, Tyler Potts, Brad Traversy, 
 
