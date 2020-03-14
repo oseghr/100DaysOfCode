@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-variant: small-caps;
-    font-size: 25px;;
+    font-size: 25px;
 }
 .slide{
     text-align: right;
@@ -19,20 +19,17 @@
     overflow: hidden;
     transition: 0.6s;
     font-size: 2em;
-
 }
 
 .slideitem{
     list-style: none;
     margin-right: 2em;
-
 }
 
 .slidelink{
     text-decoration: none;
     list-style: none;
-    color: black;
-    
+    color: black;   
 }
 
 header{
