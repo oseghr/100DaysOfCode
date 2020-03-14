@@ -4,7 +4,6 @@ function displayTime() {
     let hrs = date.getHours();
     let min = date.getMinutes();
     let sec = date.getSeconds();
-
     let timeformat = timeFormat();
 
     let hrsX = hrs;
@@ -34,7 +33,6 @@ function displayTime() {
     
     function timeFormat(time) {
         let timeformat = "AM";
-
         hrs < 12 ? timeformat = "AM" : timeformat = "PM";
         return timeformat;
     };
