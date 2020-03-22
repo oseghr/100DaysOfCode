@@ -1,26 +1,14 @@
- var input = document.getElementById('input');
+var input = document.getElementById('input');
 var addBtn = document.getElementById('add');
 var delbtn = document.querySelector('.delbtn');
 var list = document.getElementById("list");
 var item = document.querySelector(".item");
 
-var todoList = [];
-
 var indx = 0;
-
 
 addBtn.addEventListener("click", addTodo);
 
-
-function displayTodo(e) {
-    e.preventDefault();
-    console.log(todoList);
-}
-
-
 function addTodo(e) {
-    e.preventDefault();
-    todoList.push(input.value);
     // create new li.item
     var newli = document.createElement("li");
     newli.className = "item";
@@ -41,18 +29,10 @@ function addTodo(e) {
     newli.appendChild(newbtn);
 
     input.value="";
-
-    displayTodo(e);
-
 }
 
 list.addEventListener("click", (e)=> {
-    e.preventDefault();
-    todoList.pop();
-
     document.getElementById(`${e.target.id}item`).remove();
-    displayTodo(e);
-
 });
 
 
