@@ -18,8 +18,7 @@ body {
     height: 100%;
     width: 20em;
     position: fixed;
-    overflow-y: scroll;
-    
+    overflow-y: scroll;  
 }
 
 #aside li {
@@ -67,14 +66,10 @@ code {
     padding: 1em 5em;
     background-color: #f4f4f4;
     border-radius: 5px;
-    
 }
 
-
-
-
+/*Responsive styling.*/
 @media screen and (max-width: 950px) {
-
     .container {
         margin: 0;
         padding: 0;
